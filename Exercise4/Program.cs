@@ -65,5 +65,10 @@ namespace Execise
                 }
             }
         }
+        static void Main(string[] args)
+        {
+            Stack s = new Stack();
+            
+        }
     }
 }
