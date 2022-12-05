@@ -68,7 +68,46 @@ namespace Execise
         static void Main(string[] args)
         {
             Stack s = new Stack();
-            
+            while (true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("\n***Menu***\n");
+                Console.WriteLine("1. Insert the number in the array");
+                Console.WriteLine("2. Push");
+                Console.WriteLine("3. Pop");
+                Console.WriteLine("4. Display");
+                Console.WriteLine("5. Exit");
+                Console.Write("\n Enter your choice: ");
+                string Input = Console.ReadLine();
+                char ch = Convert.ToChar(Input == "" ? "0" : Input);
+                switch (ch)
+                {
+                    case '1':
+                        s.Read();
+                        break;
+                    case '2':
+                        s.push();
+                        break;
+                    case '3':
+                        if (s.empty())
+                        {
+                            Console.WriteLine("\n Still empty");
+                            break;
+                        }
+                        s.pop();
+                        break;
+                    case '4':
+                        s.display();
+                        break;
+                    case '5':
+                        return;
+                    default:
+                        Console.WriteLine("\n Invalid choice");
+                        break;
+                    
+
+                }
+            }
         }
     }
 }
