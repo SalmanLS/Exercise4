@@ -52,9 +52,18 @@ namespace Execise
             top = -1;
         }
 
-        
-
+        public void display()
+        {
+            
+            if(empty())
+                Console.WriteLine("\n Stack is empty");
+            else
+            {
+                for (int t = top; t != null; t = t-1)
+                {
+                    Console.WriteLine(luthfi[top]);
+                }
+            }
+        }
     }
-    
-    
 }
