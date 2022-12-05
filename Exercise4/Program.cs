@@ -11,7 +11,7 @@ namespace Execise
         {
             while (true)
             {
-                Console.WriteLine("Masukkan banyaknya elemen pada Array: ");
+                Console.Write("Masukkan banyaknya elemen pada Array: ");
                 string s = Console.ReadLine();
                 i = Int32.Parse(s);
                 if (i <= 25)
@@ -37,19 +37,19 @@ namespace Execise
             Console.WriteLine("");
             Console.WriteLine("---------------------");
             Console.WriteLine("Masukkan elemen array");
-            Console.WriteLine(-----------------------);
-            for(int j = 0; j < i; j++)
+            Console.WriteLine("---------------------");
+            for (top = 0; top < i; top++)
             {
-                top = top + 1;
-                Console.WriteLine((j+1)+".");
+                Console.Write((top+1)+".");
                 string s1 = Console.ReadLine();
-                top = luthfi[j] = Int32.Parse(s1);
+                luthfi[top] = Int32.Parse(s1); 
             }
+            top = top + 1;
         }
         public void pop()
         {
             Console.WriteLine("\n The popped element is;" + luthfi[top]);
-            top = -1;
+            top = luthfi[top-1];
         }
 
         public void display()
@@ -61,7 +61,7 @@ namespace Execise
             {
                 for (int t = top; t != null; t = t-1)
                 {
-                    Console.WriteLine(luthfi[top]);
+                    Console.Write(luthfi[t]);
                 }
             }
         }
