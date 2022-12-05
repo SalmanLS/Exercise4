@@ -7,21 +7,6 @@ namespace Execise
         int[] luthfi = new int[25];
         public int i;
         int top;
-        public Stack()
-        {
-            top = -1;
-        }
-        bool empty()
-        {
-            if (top == null)
-                return (true);
-            else
-                return (false);
-        }
-        public void push()
-        {
-
-        }
         public void Read()
         {
             while (true)
@@ -35,6 +20,31 @@ namespace Execise
                     Console.WriteLine("\n Maksimal elemen adalah 25. \n");
             }
             
+        }
+        public Stack()
+        {
+            top = -1;
+        }
+        bool empty()
+        {
+            if (top == -1)
+                return (true);
+            else
+                return (false);
+        }
+        public void push()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("---------------------");
+            Console.WriteLine("Masukkan elemen array");
+            Console.WriteLine(-----------------------);
+            for(int j = 0; j < i; j++)
+            {
+                top = top + 1;
+                Console.WriteLine((j+1)+".");
+                string s1 = Console.ReadLine();
+                luthfi[j] = Int32.Parse(s1);
+            }
         }
 
     }
