@@ -43,9 +43,16 @@ namespace Execise
                 top = top + 1;
                 Console.WriteLine((j+1)+".");
                 string s1 = Console.ReadLine();
-                luthfi[j] = Int32.Parse(s1);
+                top = luthfi[j] = Int32.Parse(s1);
             }
         }
+        public void pop()
+        {
+            Console.WriteLine("\n The popped element is;" + luthfi[top]);
+            top = -1;
+        }
+
+        
 
     }
     
