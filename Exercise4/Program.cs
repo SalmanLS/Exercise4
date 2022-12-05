@@ -2,11 +2,26 @@
 
 namespace Execise
 {
-    class StackUsingArray
+    class Stack
     {
         int[] luthfi = new int[25];
-        int i;
+        public int i;
+        int top;
+        public Stack()
+        {
+            top = -1;
+        }
+        bool empty()
+        {
+            if (top == null)
+                return (true);
+            else
+                return (false);
+        }
+        public void push()
+        {
 
+        }
         public void Read()
         {
             while (true)
@@ -21,10 +36,8 @@ namespace Execise
             }
             
         }
-    }
-    class Stack
-    {
 
     }
+    
     
 }
